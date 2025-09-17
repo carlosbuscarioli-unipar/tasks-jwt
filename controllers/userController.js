@@ -1,5 +1,5 @@
 const User = require("../models/User");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const {generateToken} = require('../middlewares/authMiddleware')
 const login = async (req, res) => {
   try {
